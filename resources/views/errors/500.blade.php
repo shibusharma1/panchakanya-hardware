@@ -1,0 +1,12 @@
+@extends('layouts.app')
+
+@section('title', 'Server Error')
+
+@section('content')
+<div class="error-page text-center py-20">
+    <h1 class="text-9xl font-bold text-gray-800">500</h1>
+    <h2 class="text-4xl font-semibold mt-4">Something Went Wrong</h2>
+    <p class="mt-2 text-gray-600">We are working to fix the issue. Please try again later.</p>
+    <a href="{{ url('/') }}" class="mt-6 inline-block px-6 py-3 bg-gray-800 text-white rounded hover:bg-gray-900 transition">Go Home</a>
+</div>
+@endsection
